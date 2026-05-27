@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏍️ Moto Runner v1.0
 
 Jogo de runner 2D infinito — HTML5 + JavaScript puro, sem dependências.
@@ -94,3 +95,6 @@ ctx.fillStyle = '#cc2222';  // mude para qualquer cor hex
 1. Crie `js/entities/powerup.js` com estrutura similar ao `obstacle.js`
 2. Adicione `<script src="js/entities/powerup.js"></script>` no `index.html`
 3. Chame `Powerup.update(dt)` e `Powerup.draw()` em `gameLoop.js`
+=======
+# Game-MotoRun
+>>>>>>> 91ca401f5e55974e7ba3eed53b8ddef8666dd29b
