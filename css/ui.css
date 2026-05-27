@@ -1,0 +1,70 @@
+/* ui.css — Cores, fontes e visual dos elementos de interface */
+
+:root {
+  --color-bg:          #0a0a12;
+  --color-accent:      #ff4444;
+  --color-gold:        #ffd166;
+  --color-text:        #ffffff;
+  --color-muted:       #888888;
+  --color-border:      #333333;
+  --color-key-bg:      #1e1e2e;
+  --color-key-border:  #444444;
+  --color-key-text:    #cccccc;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--color-text);
+  user-select: none;
+}
+
+/* Título */
+.game-title {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-shadow: 0 0 24px rgba(255,68,68,0.45);
+}
+.game-title span { color: var(--color-gold); }
+
+.game-subtitle {
+  font-size: 12px;
+  color: var(--color-muted);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+/* Canvas */
+#gameCanvas {
+  display: block;
+  border-radius: 12px;
+  border: 2px solid var(--color-border);
+  box-shadow: 0 0 40px rgba(255,68,68,0.12);
+}
+
+/* Controles */
+.control-item {
+  font-size: 13px;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+kbd {
+  background: var(--color-key-bg);
+  border: 1px solid var(--color-key-border);
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-key-text);
+}
+
+.game-version {
+  font-size: 11px;
+  color: #2a2a3a;
+  letter-spacing: 1px;
+}

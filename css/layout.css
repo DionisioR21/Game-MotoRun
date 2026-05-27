@@ -1,0 +1,21 @@
+/* layout.css — Posicionamento e estrutura da página */
+
+body {
+  background: #0a0a12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.game-header  { text-align: center; margin-bottom: 12px; }
+.game-wrapper { line-height: 0; }
+
+.game-controls {
+  display: flex;
+  gap: 24px;
+  margin-top: 14px;
+}
+
+.game-version { margin-top: 10px; }

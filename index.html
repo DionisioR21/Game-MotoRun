@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moto Runner</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/ui.css" />
+</head>
+<body>
+
+  <header class="game-header">
+    <h1 class="game-title">Moto <span>Runner</span></h1>
+    <p class="game-subtitle">Desvie das caixas e sobreviva!</p>
+  </header>
+
+  <main class="game-wrapper">
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+  </main>
+
+  <footer class="game-controls">
+    <div class="control-item"><kbd>A</kbd> / <kbd>←</kbd> Esquerda</div>
+    <div class="control-item"><kbd>D</kbd> / <kbd>→</kbd> Direita</div>
+    <div class="control-item"><kbd>R</kbd> Reiniciar</div>
+  </footer>
+
+  <p class="game-version">v3.1 — Moto Runner © 2026 by Dion y Claude</p>
+
+  <!-- ENGINE (base, carrega primeiro) -->
+  <script src="js/engine/constants.js"></script>
+  <script src="js/engine/renderer.js"></script>
+  <script src="js/engine/inputHandler.js"></script>
+  <script src="js/engine/gameState.js"></script>
+
+  <!-- ENTIDADES -->
+  <script src="js/entities/road.js"></script>
+  <script src="js/entities/player.js"></script>
+  <script src="js/entities/obstacle.js"></script>
+
+  <!-- SISTEMAS -->
+  <script src="js/systems/particleSystem.js"></script>
+  <script src="js/systems/collisionSystem.js"></script>
+  <script src="js/systems/spawnSystem.js"></script>
+  <script src="js/systems/hud.js"></script>
+  <script src="js/systems/screens.js"></script>
+
+  <!-- LOOP E INICIALIZAÇÃO (carrega por último) -->
+  <script src="js/engine/gameLoop.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
